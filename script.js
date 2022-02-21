@@ -25,7 +25,6 @@ function initMap() {
 
 $(document).on("ready", function () {
   $(".lazy").slick({
-
     infinite: true,
     autoplay: true,
     dots: true,
@@ -58,10 +57,26 @@ function onArrowClick() {
   projects.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-//to stop auto scrolling
-$(window).on("unload", function () {
-  $(window).scrollTop(0);
-});
+//rest of smooth scroll
+
+const links = document.querySelectorAll(".header-container--hrefs a");
+for (const link of links) {
+  link.addEventListener("click", clickHandler);
+}
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+  scroll({
+    top: offsetTop,
+    behavior: "smooth",
+  });
+}
+
+// //to stop auto scrolling
+// $(window).on("unload", function () {
+//   $(window).scrollTop(0);
+// });
 
 //form validation
 function validateEmail(inputText) {

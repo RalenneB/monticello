@@ -5,10 +5,6 @@
   color: #2c4058;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   width: 1600px;
 }
