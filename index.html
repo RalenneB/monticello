@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monticello</title>
+    <link rel="shortcut icon" type="image/jpg" href="/img/favicon.png"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -12,7 +13,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,6 +24,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- slick part -->
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <main class="screen">
@@ -60,21 +64,56 @@
           </div>
           <div class="header-container--social">
             <div class="social-icon">
-              <img src="./img/facebook.svg" alt="FB icon" />
+                <a href="http://facebook.com"><img src="./img/facebook.svg" alt="FB icon" /></a>
             </div>
             <div class="social-icon">
-              <img src="./img/twitter.svg" alt="Twitter icon" />
+                <a href="http://twitter.com"><img src="./img/twitter.svg" alt="Twitter icon" /></a>
             </div>
             <div class="social-icon">
-              <img src="./img/instgram.svg" alt="Instagram icon" />
+                <a href="http://instagram.com"><img src="./img/instgram.svg" alt="Instagram icon" /></a>
             </div>
           </div>
         </nav>
-        <section class="landing-screen__card">
-          <h1 class="landing-screen__card--title">SIMPLE & MODERN</h1>
-          <h4 class="landing-screen__card--subtitle">
-            WE MAKE THE WORLD BEAUTIFUL EVERYDAY
-          </h4>
+        <section class="landing-screen__card lazy slider" data-sizes="50vw">
+          <div class="landing-screen__card--wrapper">
+            <h1 class="landing-screen__card--title">SIMPLE & MODERN</h1>
+            <h4 class="landing-screen__card--subtitle">
+              WE MAKE THE WORLD BEAUTIFUL EVERYDAY
+            </h4>
+          </div>
+          <div class="landing-screen__card--wrapper">
+            <h1 class="landing-screen__card--title">MINIMALISM</h1>
+            <h4 class="landing-screen__card--subtitle">
+              LESS IS MORE
+            </h4>
+          </div>
+          <div class="landing-screen__card--wrapper">
+            <h1 class="landing-screen__card--title">MANIFEST IT</h1>
+            <h4 class="landing-screen__card--subtitle">
+              DREAM LESS, CREATE MORE
+            </h4>
+          </div>
+          <div class="landing-screen__card--wrapper">
+            <h1 class="landing-screen__card--title">BREATH IN, BREATH OUT</h1>
+            <h4 class="landing-screen__card--subtitle">
+              VISUALIZE THE FUTURE
+            </h4>
+            </div>
+             <div class="landing-screen__card--wrapper">
+            <h1 class="landing-screen__card--title">IMAGINE MORE</h1>
+            <h4 class="landing-screen__card--subtitle">
+              HAVE THE COURAGE TO START NEW THINGS
+            </h4>
+          </div>
+          <div class="landing-screen__card--wrapper">
+            <h1 class="landing-screen__card--title">YOU ARE UNIQUE</h1>
+            <h4 class="landing-screen__card--subtitle">
+              SEE THE LIFE AS A MIRACLE
+            </h4>
+          </div>
+          <figure class="landing-screen__card--down-arrow">
+             <img class="arrow" src="/img/arrow.svg" alt="Down Arrow" onclick="onArrowClick()"></i>
+          </figure>
         </section>
       </section>
       <section class="projects-screen" id="projects">
@@ -131,41 +170,137 @@
         </div>
       </section>
       <section class="news-screen" id="news">
-        <div class="news_line">
-          <img src="/img/white_line.png" alt="White line" />
-        </div>
-        <div class="news_title">
-          <h2>LATEST NEWS</h2>
-        </div>
-        <div class="news-container">
-          <article class="news-container__card">
-            <div class="news-container__card--img">
-              <img src="./img/news_1.png" alt="Unmatched" />
+          <div class="news_line">
+              <img src="/img/white_line.png" alt="White line" />
             </div>
-            <div class="news-container__card--cta">
-              SEE THE UNMATCHED BEAUTY OF THE GREAT.
+            <div class="news_title">
+                <h2>LATEST NEWS</h2>
             </div>
-            <div class="news-container__card--text">
-              Free directories: directories are perfect for customers that are
-              searching for...
+            <div class="news-container multiple-items slider">
+                <article class="news-container__card">
+                    <div class="news-container__card--img">
+                        <img src="./img/news_1.png" alt="Unmatched" />
+                    </div>
+                    <div class="news-container__card--cta">
+                        SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                    </div>
+                    <div class="news-container__card--text">
+                    Free directories: directories are perfect for customers that are
+                    searching for...
+                    </div>
+                    <div class="news-container__card--meta">
+                        <div class="meta-img">
+                            <img class="" src="/img/news_avatar1.png" alt="Avatar Alja" />
+                        </div>
+                        <div class="meta-info">
+                            <h5>ALJA BRUN</h5>
+                            <h6>20 Jan 2020</h6>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-container__card">
+                    <div class="news-container__card--img">
+                        <img src="./img/news_2.png" alt="Unmatched" />
+                    </div>
+                    <div class="news-container__card--cta">
+                    EFFECTIVE ADVERTISING POINTERS.
+                    </div>
+                    <div class="news-container__card--text">
+                    Having a home based business is a wonderful asset to your life...
+                    </div>
+                    <div class="news-container__card--meta">
+                        <div class="meta-img">
+                        <img src="/img/news_avatar2.png" alt="Avatar Dominic"/>
+                    </div>
+                    <div class="meta-info">
+                        <h5>DOMINIC FREEMAN</h5>
+                        <h6>13 Dec 2019</h6>
+                    </div>
+                    </div>
+                </article>
+                <article class="news-container__card">
+                    <div class="news-container__card--img">
+                        <img src="./img/news_3.png" alt="Unmatched" />
+                    </div>
+                    <div class="news-container__card--cta">
+                    HYPNOTIZE YOURSELF INTO THE GHOST.
+                    </div>
+                    <div class="news-container__card--text">
+                        There are many things that are important to catalog design...
+                    </div>
+                    <div class="news-container__card--meta">
+                        <div class="meta-img">
+                            <img src="/img/news_avatar3.png" alt="Avatar Alice" />
+                        </div>
+                        <div class="meta-info">
+                            <h5>ALICE WARD</h5>
+                            <h6>30 Nov 2019</h6>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-container__card">
+                    <div class="news-container__card--img">
+                        <img src="./img/news_1.png" alt="Unmatched" />
+                    </div>
+                    <div class="news-container__card--cta">
+                    SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                    </div>
+                    <div class="news-container__card--text">
+                    Free directories: directories are perfect for customers that are
+                    searching for...
+                    </div>
+                    <div class="news-container__card--meta">
+                        <div class="meta-img">
+                            <img src="/img/news_avatar1.png" alt="Avatar Alja" />
+                        </div>
+                        <div class="meta-info">
+                            <h5>ALJA BRUN</h5>
+                        <h6>20 Jan 2020</h6>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-container__card">
+                    <div class="news-container__card--img">
+                        <img src="./img/news_2.png" alt="Unmatched" />
+                    </div>
+                    <div class="news-container__card--cta">
+                    EFFECTIVE ADVERTISING POINTERS.
+                    </div>
+                    <div class="news-container__card--text">
+                    Having a home based business is a wonderful asset to your life...
+                    </div>
+                    <div class="news-container__card--meta">
+                        <div class="meta-img">
+                            <img src="/img/news_avatar2.png" alt="Avatar Dominic" />
+                        </div>
+                        <div class="meta-info">
+                            <h5>DOMINIC FREEMAN</h5>
+                            <h6>13 Dec 2019</h6>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-container__card">
+                    <div class="news-container__card--img">
+                    <img src="./img/news_3.png" alt="Unmatched" />
+                    </div>
+                    <div class="news-container__card--cta">
+                    HYPNOTIZE YOURSELF INTO THE GHOST.
+                    </div>
+                    <div class="news-container__card--text">
+                    There are many things that are important to catalog design...
+                    </div>
+                    <div class="news-container__card--meta">
+                        <div class="meta-img">
+                            <img src="/img/news_avatar3.png" alt="Avatar Alice" />
+                        </div>
+                        <div class="meta-info">
+                            <h5>ALICE WARD</h5>
+                            <h6>30 Nov 2019</h6>
+                        </div>
+                    </div>
+                </article>
             </div>
-            <div class="news-container__card--meta">
-              <div class="meta-img">
-                <img src="/img/news_avatar1.png" alt="Avatar Alja" />
-              </div>
-              <div class="meta-info">
-                <h5>ALJA BRUN</h5>
-                <h6>20 Jan 2020</h6>
-              </div>
-            </div>
-          </article>
-
-          <!-- <article class="news-container__card">
-
-            </article> it s repeated, to be put in js-->
-        </div>
       </section>
-
       <section class="gallery-screen">
         <div class="gallery-line">
           <img src="/img/black_line.png" alt="Black line" />
@@ -173,53 +308,101 @@
         <h2 class="gallery-title">GALLERY</h2>
         <div class="gallery-container">
           <div class="big_img_area">
-              <img src="img/gal1.png" alt="Big Area Building">
-              <img class="symbol" src="/img/symbol360.png" alt="360 Icon">
+            <img src="img/gal1.png" alt="Big Area Building" />
+            <img class="symbol" src="/img/symbol360.png" alt="360 Icon" />
           </div>
           <div class="first">
-              <img src="/img/gal2.png" alt="First">
+            <img src="/img/gal2.png" alt="First" />
           </div>
 
           <div class="second">
-              <img src="/img/gal3.png" alt="Second">
+            <img src="/img/gal3.png" alt="Second" />
           </div>
           <div class="third">
-              <img src="/img/gal4.png" alt="Third">
+            <img src="/img/gal4.png" alt="Third" />
           </div>
           <div class="fourth">
-              <img src="/img/gal5.png" alt="Fourth">
+            <img src="/img/gal5.png" alt="Fourth" />
           </div>
         </div>
         <button class="gallery-btn">SEE MORE</button>
       </section>
-      <section class="map-screen">
-
+      <section class="map-screen" id="map">
+        <!-- magic of map happens here -->
       </section>
-      <form class="form-screen">
+      <footer class="footer-screen">
+          <!-- the form stays better her -->
+        <section class="form-screen" id="contact">
           <div class="form__line">
-              <img src="/img/black_line.png" alt="Black Line">
+            <img src="/img/black_line.png" alt="Black Line" />
           </div>
           <h2 class="form__title">GET IN TOUCH</h2>
           <div class="form__container">
-              <div class="form__container--address">
-                <i class="fa fa-map-marker" aria-hidden="true"></i> 91 Nolan Extensions Suite 670 <br>
-                <i class="fa fa-phone" aria-hidden="true"></i> +001 356-868-2454 <br>
-                <i class="fa fa-envelope-open-o" aria-hidden="true"></i> montichello@service.com <br>
-                <i class="fa fa-clock-o" aria-hidden="true"></i> From 07:05AM to 19:30PM <br>
-              </div>
-              <div class="form__container--labels">
-                <label for="fname"></label>
-                <input type="text" id="fname" name="fname" placeholder="Mollie Medina">
-                <label for="lmail"></label>
-                <input type="email" id="lmail" name="lmail" placeholder="Email" >
-                <button class="form-btn">SUBMIT</button>
-              </div>
-
+            <div class="form__container--address">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> 91 Nolan
+              Extensions Suite 670 <br />
+              <i class="fa fa-phone" aria-hidden="true"></i> +001 356-868-2454
+              <br />
+              <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+              montichello@service.com <br />
+              <i class="fa fa-clock-o" aria-hidden="true"></i> From 07:05AM to
+              19:30PM <br />
+            </div>
+            <form name="form" action="mailto:raluca.baceanu@gmail.com" method="post" enctype="text/plain" class="form__container--labels">
+                <!-- this is not super fancy -->
+              <label for="fname"></label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Mollie Medina"
+                required
+              />
+              <label for="lmail"></label>
+              <input type="email" id="lmail" name="lmail" placeholder="Email"
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" />
+              <button class="form-btn"
+              onclick="validateEmail(document.form.lmail)">SUBMIT</button>
+            </form>
           </div>
-        
-      </form>
-
+        </section>
+        <div class="footer">
+          <div class="footer--img">
+            <img src="./img/logo_copyright.png" alt="Logo Copyright" />
+          </div>
+          <div class="footer--social">
+            <div class="social-icon">
+                <a href="http://facebook.com"><img src="./img/facebook.svg" alt="FB icon" /></a>
+            </div>
+            <div class="social-icon">
+                <a href="http://twitter.com"><img src="./img/twitter.svg" alt="Twitter icon" /></a>
+            </div>
+            <div class="social-icon">
+                <a href="http://instagram.com"><img src="./img/instgram.svg" alt="Instagram icon" /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
+<!-- map part -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8pVokoan7TQESJ9G25SnoKkRcFEloT4w&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <!-- slick part -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/slick/slick.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    </script>
+    <script type="text/javascript" src="/slick/slick.min.js"></script>
     <script src="script.js"></script>
+    <script type="text/javascript">
+    </script>
   </body>
 </html>

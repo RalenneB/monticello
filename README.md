@@ -75,3 +75,5 @@ Requirements:
 10. Use SVG where possible
 
 Upload the solution to GitHub or pack an archive 20 mins prior to the end.
+
+Mockup Figma: https://www.figma.com/file/OFWqAJe5ScK426pxG1q89b/6f0238fd-4ce5-4320-94bd-c8c26111f1a1-(1)?node-id=1%3A2 
