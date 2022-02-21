@@ -203,7 +203,7 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    content: '•';
+    content: '●';
     color: rgb(255, 255, 255);
 }
 
@@ -275,6 +275,6 @@
 {
     opacity: .99;
     color: rgb(255, 255, 255);
-    content: '•';
+    content: '●';
     /* border:none; */
 }
