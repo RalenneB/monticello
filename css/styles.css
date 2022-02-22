@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 800px;
-  background-image: url(" /img/screen1_mask_group.png"), linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
+  background-image: url("../img/screen1_mask_group.png"), linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
   background-size: cover;
   align-items: center;
   justify-content: space-around;
@@ -275,7 +275,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 1035px;
-  background-image: url("/img/news_mask.png"), linear-gradient(237.1deg, #24ccfa 11.16%, #3c7fd4 89.18%);
+  background-image: url("../img/news_mask.png"), linear-gradient(237.1deg, #24ccfa 11.16%, #3c7fd4 89.18%);
   background-size: cover;
   color: white;
   padding: 20px;
@@ -436,7 +436,7 @@ body {
   flex-direction: column;
   width: 770px;
   height: 450px;
-  background-image: url("/img/form_mask1.png");
+  background-image: url("../img/form_mask1.png");
   justify-content: center;
   margin: auto;
   box-shadow: 0px 0px 10px 0px #a8a6a6;
@@ -522,7 +522,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 549px;
-  background-image: url("/img/footer_background.png"), linear-gradient(251.06deg, #7e5aff -2.19%, #55b7ff 103.21%);
+  background-image: url("../img/footer_background.png"), linear-gradient(251.06deg, #7e5aff -2.19%, #55b7ff 103.21%);
   background-size: cover;
   align-items: center;
   justify-content: space-around;
@@ -589,11 +589,11 @@ body {
 }
 
 .slick-prev:before {
-  content: url("/img/left.png");
+  content: url("../img/left.png");
 }
 
 .slick-next:before {
-  content: url("/img/right.png");
+  content: url("../img/right.png");
 }
 
 /*# sourceMappingURL=styles.css.map */
