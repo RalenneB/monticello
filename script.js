@@ -17,7 +17,7 @@ function initMap() {
   const marker = new google.maps.Marker({
     position: location,
     map: map,
-    icon: "/img/pin.svg",
+    icon: "./img/pin.svg",
   });
 }
 
