@@ -1,7 +1,27 @@
 // toggle button in href links header
+// $(".href--elem").on("click", function () {
+//   $("i", this).toggleClass("fa fa-circle-thin fa fa-circle");
+// });
+
+//advanced toggle
+
 $(".href--elem").on("click", function () {
-  $("i", this).toggleClass("fa fa-circle-thin fa fa-circle");
-});
+    const toggles = $(".href--elem i");
+    toggles.removeClass('fa-circle');
+    toggles.addClass('fa-circle-thin');
+    console.log(toggles);
+    const currentToggle = $("i", this);
+    currentToggle.removeClass("fa-circle-thin");
+    currentToggle.addClass("fa-circle");
+    console.log(currentToggle);
+    
+    // for (const hrefElem of toggles) {
+    //     console.log();
+    //     hrefElem.children[0].removeClass("fa-circle");
+    // }
+    // // }.forEach(hrefElem => console.log(hrefElem.children[0]));
+    // $("i", this).addClass("fa-circle");
+  });
 
 //map creation
 
